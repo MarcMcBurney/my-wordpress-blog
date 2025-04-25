@@ -1,6 +1,7 @@
 services:
   wordpress:
     image: wordpress:latest
+    restart: always
     ports:
       - "8081:80"  # Maps host port 8081 to container port 80
     environment:
